@@ -8,11 +8,12 @@ Study notes in computer science
 ### Programming
 
 - [x] [Model/View Programming](https://doc.qt.io/qt-6/model-view-programming.html)
-- [ ] [Graphics View Framework](https://doc.qt.io/qt-6/graphicsview.html)
+- [x] [Graphics View Framework](https://doc.qt.io/qt-6/graphicsview.html)
+- [ ] [Undo Framework Example](https://doc.qt.io/qt-6/qtwidgets-tools-undoframework-example.html)
 
 ### Algorithms
 
-- [ ] 
+- [ ] BSP(Binary Space Partitioning) Tree
 
 ### Machine Learning
 
