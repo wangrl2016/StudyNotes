@@ -8,6 +8,11 @@ Study notes in computer science
 ### Programming
 
 - [x] [Model/View Programming](https://doc.qt.io/qt-6/model-view-programming.html)
+- [ ] [Graphics View Framework](https://doc.qt.io/qt-6/graphicsview.html)
+
+### Algorithms
+
+- [ ] 
 
 ### Machine Learning
 
