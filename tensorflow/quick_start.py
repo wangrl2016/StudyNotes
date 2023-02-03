@@ -1,13 +1,29 @@
 #!/usr/bin/python3
 
 """
+程序步骤
 python3 -m pip install tensorflow-macos
 This short introduction uses Keras to:
 1. Load pre-build dataset.
 2. Build a neural network machine learning model that classifies images.
 3. Train this neural network.
 4. Evaluate the accuracy of the model.
+
+程序原理
+1. MNIST数据集
+2. 神经网络的Hello World程序
+3. 神经网络模型介绍
+4. 神经网络的数据表示
+5. Numpy库介绍
+6. 导数基础概念
+7. 线性代数基础
+8. 张量运算
+9. 优化器（基于梯度的优化）
+10. 反向传播算法
+11. 手写神经网络实现
+12. RNN神经网络
 """
+
 
 import tensorflow as tf
 
