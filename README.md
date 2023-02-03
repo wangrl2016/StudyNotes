@@ -4,6 +4,7 @@ Study notes in computer science
 ### Math
 
 - [ ] Derivative（导数）
+- [ ] Geometry
 
 ### Programming
 
