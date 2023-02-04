@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 """
 程序步骤
 python3 -m pip install tensorflow-macos
@@ -23,7 +21,6 @@ This short introduction uses Keras to:
 11. 手写神经网络实现
 12. RNN神经网络
 """
-
 
 import tensorflow as tf
 
