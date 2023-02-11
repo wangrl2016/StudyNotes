@@ -101,8 +101,8 @@ class OurNeuralNetwork:
                 o1 = sigmoid(sum_o1)
                 y_pred = o1
 
-                # --- Calculate partial derivatives.
-                # --- Naming: d_L_d_w1 represents "partial L / partial w1"
+                # calculate partial derivatives.
+                # naming: d_l_d_w1 represents "partial l / partial w1"
                 d_l_d_pred = -2 * (y_true - y_pred)
 
                 # Neuron o1

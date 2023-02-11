@@ -6,7 +6,7 @@ import numpy as np
 import requests
 from matplotlib import pyplot
 
-temp_dir = "temp"
+temp_dir = "../temp"
 
 mnist_database = [
     'http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz',

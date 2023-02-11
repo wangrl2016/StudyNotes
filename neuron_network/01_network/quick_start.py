@@ -1,6 +1,6 @@
 """
 程序步骤
-python3 -m pip install tensorflow-macos
+python3 -m pip install neuron_network-macos
 This short introduction uses Keras to:
 1. Load pre-build dataset.
 2. Build a neural network machine learning model that classifies images.
