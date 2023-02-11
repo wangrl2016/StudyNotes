@@ -29,6 +29,7 @@ Diana	        -15	                -6	            1
 6. Code: A Complete Neural Network
 
 """
+import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -83,9 +84,10 @@ class OurNeuralNetwork:
         - all_y_trues is a numpy array with n elements.
           Elements in all_y_trues correspond to those in data.
         """
-        learn_rate = 0.1
+        learn_rate = 0.01
         epochs = 1000  # number of times to loop through the entire dataset
 
+        epoch_loss = []
         for epoch in range(epochs):
             for x, y_true in zip(data, all_y_trues):
                 # --- Do a feedforward (we'll need these values later)
@@ -142,6 +144,9 @@ class OurNeuralNetwork:
                 predicts = np.apply_along_axis(self.feed_forward, 1, data)
                 loss = mse_loss(all_y_trues, predicts)
                 print("Epoch %d loss: %.3f" % (epoch, loss))
+                epoch_loss.append(loss)
+
+        return epoch_loss
 
 
 def main():
@@ -161,13 +166,18 @@ def main():
 
     # train our neural network
     network = OurNeuralNetwork()
-    network.train(data, all_y_trues)
+    epoch_loss = network.train(data, all_y_trues)
 
     # user the network to predict genders
     emily = np.array([-7, -3])  # 128 pounds, 63 inches
     frank = np.array([20, 2])  # 155 pounds, 68 inches
     print("Emily: %.3f" % network.feed_forward(emily))  # 0.951 - F
     print("Frank: %.3f" % network.feed_forward(frank))  # 0.039 - M
+
+    x = np.linspace(0, 1, epoch_loss.__len__())
+    fig, ax = plt.subplots()
+    ax.plot(x, epoch_loss)
+    plt.show()
 
 
 if __name__ == '__main__':
