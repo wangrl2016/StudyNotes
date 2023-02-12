@@ -1,3 +1,6 @@
+math_animation/media/
+math_animation/__pycache__/
+
 .idea/
 
 temp/
