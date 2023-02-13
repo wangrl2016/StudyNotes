@@ -5,6 +5,7 @@ math_animation/videos/
 math_animation/__pycache__/
 
 .idea/
+.DS_Store
 
 temp/
 
