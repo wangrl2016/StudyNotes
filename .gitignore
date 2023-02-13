@@ -1,4 +1,7 @@
 math_animation/media/
+math_animation/Tex/
+math_animation/texts/
+math_animation/videos/
 math_animation/__pycache__/
 
 .idea/

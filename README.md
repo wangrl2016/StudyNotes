@@ -6,6 +6,9 @@ Study notes in computer science
 - [ ] Derivative（导数）
 - [ ] Geometry
 
+- [x] Manim `manimce -p -qh example.py SquareToCircle`
+
+
 ### Programming
 
 - [x] [Model/View Programming](https://doc.qt.io/qt-6/model-view-programming.html)
