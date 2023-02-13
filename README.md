@@ -1,25 +1,23 @@
 # StudyNotes
 Study notes in computer science
 
-### Math
+### 机器学习合集
 
-- [ ] Derivative（导数）
-- [ ] Geometry
+#### 神经网络基础
 
-- [x] Manim `manimce -p -qh example.py SquareToCircle`
+主要包括两大部分：
+
+(1) 神经网络概念介绍
+
+(2) 手写神经网络
+
+B站视频：
+
+ - [x] 《使用Python进行深度学习》开场白
+ - [x] 
+
+#### TensorFlow官网讲解
 
 
-### Programming
+#### Keras实例
 
-- [x] [Model/View Programming](https://doc.qt.io/qt-6/model-view-programming.html)
-- [x] [Graphics View Framework](https://doc.qt.io/qt-6/graphicsview.html)
-- [ ] [Undo Framework Example](https://doc.qt.io/qt-6/qtwidgets-tools-undoframework-example.html)
-
-### Algorithms
-
-- [ ] BSP(Binary Space Partitioning) Tree
-
-### Machine Learning
-
-- [ ] [A Neural Network in 11 lines of Python](https://iamtrask.github.io/2015/07/12/basic-python-network/)
-- [ ] [Machine Learning for Beginners: An Introduction to Neural Networks](https://victorzhou.com/blog/intro-to-neural-networks/)
