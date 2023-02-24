@@ -48,11 +48,16 @@ B站视频：
 (1) Keras机器学习基础知识
 
 * 均方误差（MSE）是用于回归问题的常见损失函数（分类问题中使用不同的损失函数）。
+
 * 早期停止是一种防止过度拟合的有效技术。
+
+
 
 (2) 加载和预处理数据
 
 (3) 图像
+
+* (卷积基础)[https://betterexplained.com/articles/intuitive-convolution/]
 
 (4) 文本
 
