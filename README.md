@@ -59,6 +59,8 @@ B站视频：
 
 * (卷积基础)[https://betterexplained.com/articles/intuitive-convolution/]
 
+* (MATHEMATICS OF THE DISCRETE FOURIER TRANSFORM (DFT) WITH AUDIO APPLICATIONS)[]
+
 (4) 文本
 
 (5) 生成式
