@@ -59,7 +59,7 @@ B站视频：
 
 * (卷积基础)[https://betterexplained.com/articles/intuitive-convolution/]
 
-* (MATHEMATICS OF THE DISCRETE FOURIER TRANSFORM (DFT) WITH AUDIO APPLICATIONS)[]
+* (A Comprehensive Guide to Convolutional Neural Networks)[https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53]
 
 (4) 文本
 

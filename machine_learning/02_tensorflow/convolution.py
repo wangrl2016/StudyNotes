@@ -2,6 +2,14 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from keras import datasets, layers, models
 
+"""
+卷积神经网络(1)：使用CIFAR数据集进行识别
+卷积神经网络(2): 卷积运算
+卷积神经果洛(3): 最大池化运算
+卷积神经网络(4): 可视化中间激活
+卷积神经网络(5): 可视化卷积神经网络的过滤器
+"""
+
 if __name__ == '__main__':
     (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
 
