@@ -6,23 +6,29 @@ Study notes in computer science
 
 机器学习算法是一类从数据中自动分析获得规律，并利用规律对未知数据进行预测的算法。
 
-#### 神经网络基础
+本教程的目标读者是那些具有Python编程经验，并且想要开始上手机器学习和深度学习的人。另外，熟悉Numpy库也有所帮助，但并不是必须的。
+你不需要具有机器学习或深度学习方面的经验，本教程包含从头学习所需的必要基础知识。
 
-主要包括：
+[B站视频（倒序）](https://space.bilibili.com/3461566190061988)（视频标题和知识点）
 
-(1) 神经网络概念介绍
+- [ ] 卷积神经网络(4)：最大池化运算
 
-* 深度学习是机器学习的一个分支领域：它是从数据中学习表示的一种新方法，强调从连续的层(Layer)中进行学习，这些层对应于越来越有意义的表示。
-* 神经网络中每层对输入数据所做的具体操作保存在该层的权重(Weight)中，其本质是一串数字。
+* 最大池化的作用：对特征图进行下采样，与步进卷积类似。
+* 最大池化与卷积的最大不同之处在于，最大池化通常使用2×2的窗口和步幅2，其目的是将特征图下采样2倍。
+* 使用下采样的原因，一是减少需要处理的特征图的元素个数，二是通过让连续卷积层的观察窗口越来越大(即窗口覆盖原始输入的比例越来越大)，从而引入空间过滤器的层级结构。
+* 最大池化代码`layers.MaxPooling2D((2, 2))`
+* 参考网址：[Max pooling示意图](https://paperswithcode.com/method/max-pooling)
 
-(2) 手写神经网络
+- [x] 卷积神经网络(3)：卷积计算（下）
 
-* 参考文章 [Machine Learning for Beginners: An Introduction to Neural Networks](https://victorzhou.com/blog/intro-to-neural-networks/)
+* 参考网址：[A Comprehensive Guide to Convolutional Neural Networks](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
 
+- [x] 卷积神经网络(2)：卷积计算（上）
 
-B站视频：
+- [x] 卷积神经网络(1)：使用CIFAR数据集进行识别
 
 - [x] 《使用Python进行深度学习》开场白
+
 - [x] 详解深度学习MNIST数据集（手写数字）
 - [x] 神经网络模型中的HelloWorld程序介绍
 - [x] 神经网络模型中的重要概念介绍
@@ -59,8 +65,7 @@ B站视频：
 
 * (卷积基础)[https://betterexplained.com/articles/intuitive-convolution/]
 
-* (A Comprehensive Guide to Convolutional Neural Networks)[https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53]
-
+* 
 (4) 文本
 
 (5) 生成式
