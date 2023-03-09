@@ -11,11 +11,16 @@ Study notes in computer science
 
 [B站视频（倒序）](https://space.bilibili.com/3461566190061988)（视频标题和知识点）
 
-- [ ] 卷积神经网络(4)：最大池化运算
+- [ ] 卷积神经网络(5)：可视化中间激活
+
+* 可视化中间激活，是指对于给定输入，展示网络中各个卷积层和池化层输出的特征图（层的输出通常被称为该层的激活，即激活函数的输出）。
+* 代码：[可视化中间激活](machine_learning/02_tensorflow/visual_conv_layer.py)
+
+- [x] 卷积神经网络(4)：最大池化运算
 
 * 最大池化的作用：对特征图进行下采样，与步进卷积类似。
 * 最大池化与卷积的最大不同之处在于，最大池化通常使用2×2的窗口和步幅2，其目的是将特征图下采样2倍。
-* 使用下采样的原因，一是减少需要处理的特征图的元素个数，二是通过让连续卷积层的观察窗口越来越大(即窗口覆盖原始输入的比例越来越大)，从而引入空间过滤器的层级结构。
+* 使用下采样的原因，一是减少需要处理的特征图的元素个数，二是通过让连续卷积层的观察窗口越来越大（即窗口覆盖原始输入的比例越来越大），从而引入空间过滤器的层级结构。
 * 最大池化代码`layers.MaxPooling2D((2, 2))`
 * 参考网址：[Max pooling示意图](https://paperswithcode.com/method/max-pooling)
 
@@ -47,19 +52,18 @@ Study notes in computer science
 - [x] 神经网络模型中的HelloWorld程序介绍
 
 
-
 - [x] 详解深度学习MNIST数据集（手写数字）
 
-* [MNIST数据集官网](http://yann.lecun.com/exdb/mnist/)
 * Keras加载MNIST数据集代码`(x_train, y_train), (x_test, y_test) = mnist.load_data()`
-* 代码：[解析MNIST数据集程序](machine_learning/01_network/mnist_database.py)
 * MNIST数据集图像为28x28的大小，使用int32表示，0-255表示单通道颜色，使用byte表示。
+* 代码：[解析MNIST数据集](machine_learning/01_network/mnist_database.py)
+* 参考网址：[MNIST数据集官网](http://yann.lecun.com/exdb/mnist/)
 
 - [x] 《使用Python进行深度学习》开场白
 
-* 下载[《使用Python进行深度学习》中文版](resources/deep_learning_with_python.pdf)
-* [TensorFlow中文版官网](https://www.tensorflow.org/?hl=zh-cn)
 * 机器学习领域的专家需要具备四个方面的知识：编码技能、数学和统计学、机器学习理论、构建自己的项目
+* 下载链接：[《使用Python进行深度学习》中文版](resources/deep_learning_with_python.pdf)
+* 参考网址：[TensorFlow中文版官网](https://www.tensorflow.org/?hl=zh-cn)
 
 #### TensorFlow官网讲解
 
