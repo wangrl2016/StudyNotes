@@ -6,6 +6,14 @@ import numpy as np
 import requests
 from matplotlib import pyplot
 
+"""
+下载MNIST数据集进行解析，主要目的是了解机器学习数据集，对数据集做如下操作：
+
+1. 随机解析10张图片
+2. 解析某个分类的图片，比如数字7
+3. 统计所有图片的数量分布情况
+"""
+
 temp_dir = "../temp"
 
 mnist_database = [

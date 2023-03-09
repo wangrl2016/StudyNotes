@@ -27,10 +27,7 @@ Study notes in computer science
 
 - [x] 卷积神经网络(1)：使用CIFAR数据集进行识别
 
-- [x] 《使用Python进行深度学习》开场白
 
-- [x] 详解深度学习MNIST数据集（手写数字）
-- [x] 神经网络模型中的HelloWorld程序介绍
 - [x] 神经网络模型中的重要概念介绍
 - [x] 神经网络的数据表示：张量(Tensor)
 - [x] 科学计算基础包NumPy入门介绍
@@ -46,6 +43,23 @@ Study notes in computer science
 - [x] 手写神经网络(4)：训练神经网络（上）
 - [x] 手写神经网络(5)：训练神经网络（下）
 - [x] 手写神经网络(6)：完整代码和总结
+
+- [x] 神经网络模型中的HelloWorld程序介绍
+
+
+
+- [x] 详解深度学习MNIST数据集（手写数字）
+
+* [MNIST数据集官网](http://yann.lecun.com/exdb/mnist/)
+* Keras加载MNIST数据集代码`(x_train, y_train), (x_test, y_test) = mnist.load_data()`
+* 代码：[解析MNIST数据集程序](machine_learning/01_network/mnist_database.py)
+* MNIST数据集图像为28x28的大小，使用int32表示，0-255表示单通道颜色，使用byte表示。
+
+- [x] 《使用Python进行深度学习》开场白
+
+* 下载[《使用Python进行深度学习》中文版](resources/deep_learning_with_python.pdf)
+* [TensorFlow中文版官网](https://www.tensorflow.org/?hl=zh-cn)
+* 机器学习领域的专家需要具备四个方面的知识：编码技能、数学和统计学、机器学习理论、构建自己的项目
 
 #### TensorFlow官网讲解
 
