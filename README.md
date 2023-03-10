@@ -11,10 +11,22 @@ Study notes in computer science
 
 [B站视频（倒序）](https://space.bilibili.com/3461566190061988)（视频标题和知识点）
 
+- [ ] GAN
+
+- [ ] 声音识别
+
+- [ ] 循环神经网络
+
+- [ ] 图像分割
+
+- [ ] 数据增强
+
 - [ ] 可视化卷积神经网络的过滤器
 
 * 想要观察卷积神经网络学到的过滤器，一种简单的方法是显示每个过滤器所响应的视觉模式。
 * 这可以通过在输入空间中进行梯度上升来实现：从空白输入图像开始，将梯度下降应用于卷积神经网络输入图像的值，其目的是让某个过滤器的响应最大化。得到的输入图像是选定的过滤器具有最大响应的图像。
+* 代码：[可视化过滤器](machine_learning/02_tensorflow/visual_conv_filter.py)
+
 
 - [ ] 卷积神经网络(5)：可视化中间激活
 
@@ -39,25 +51,54 @@ Study notes in computer science
 
 - [x] 卷积神经网络(1)：使用CIFAR数据集进行识别
 
+- [ ] 防止过拟合的四种策略：重点介绍添加权重正则化
+
+- [ ] 回归问题(Regression)：通过数据描述输出连续值
+
+- [ ] 对服装图像进行分类，了解TensorFlow处理全流程
+
+- [x] 手写神经网络(6)：完整代码和总结
+
+- [x] 手写神经网络(5)：训练神经网络（下）
+
+- [x] 手写神经网络(4)：训练神经网络（上）
+
+- [x] 手写神经网络(3)：微分知识（链式法则和偏导数）
+
+- [x] 手写神经网络(2)：将神经元组合成神经网络
+
+- [x] 手写神经网络(1)：构建神经元(Neuron)
+
+- [x] 手写神经网络(0)：根据身高和体重预测性别项目介绍
+
+- [x] 神经网络的“引擎”：基于梯度的优化介绍
+
+- [x] 神经网络的“齿轮”：张量运算（下）
+
+- [x] 神经网络的“齿轮”：张量运算（上）
+
+- [x] 使用NumPy库进行矩阵计算（点乘、转置）
+
+- [x] 导数基础概念介绍，以及Sigmoid函数求导
+
+* 参考网址：[Introduction to Derivatives](https://www.mathsisfun.com/calculus/derivatives-introduction.html)
+* [e(数学常数)的表示](https://zh.wikipedia.org/zh-cn/E_(数学常数))
+* [e^x求导](http://www.intuitive-calculus.com/derivative-of-e-x.html)
+* [Sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
+* [Derivative of the sigmoid function](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e)
+
+- [x] 科学计算基础包NumPy入门介绍
+
+* 参考网址：[Numpy官方教程]()
+
+- [x] 神经网络的数据表示：张量(Tensor)
 
 - [x] 神经网络模型中的重要概念介绍
-- [x] 神经网络的数据表示：张量(Tensor)
-- [x] 科学计算基础包NumPy入门介绍
-- [x] 导数基础概念介绍，以及Sigmoid函数求导
-- [x] 使用NumPy库进行矩阵计算（点乘、转置）
-- [x] 神经网络的“齿轮”：张量运算（上）
-- [x] 神经网络的“齿轮”：张量运算（下）
-- [x] 神经网络的“引擎”：基于梯度的优化介绍
-- [x] 手写神经网络(0)：根据身高和体重预测性别项目介绍
-- [x] 手写神经网络(1)：构建神经元(Neuron)
-- [x] 手写神经网络(2)：将神经元组合成神经网络
-- [x] 手写神经网络(3)：微分知识（链式法则和偏导数）
-- [x] 手写神经网络(4)：训练神经网络（上）
-- [x] 手写神经网络(5)：训练神经网络（下）
-- [x] 手写神经网络(6)：完整代码和总结
 
 - [x] 神经网络模型中的HelloWorld程序介绍
 
+* 神经网络的处理步骤：(1)预处理数据；(2)构建模型；(3)训练模型
+* 代码：[QuickStart](machine_learning/01_network/quick_start.py)
 
 - [x] 详解深度学习MNIST数据集（手写数字）
 
@@ -71,33 +112,3 @@ Study notes in computer science
 * 机器学习领域的专家需要具备四个方面的知识：编码技能、数学和统计学、机器学习理论、构建自己的项目
 * 下载链接：[《使用Python进行深度学习》中文版](resources/deep_learning_with_python.pdf)
 * 参考网址：[TensorFlow中文版官网](https://www.tensorflow.org/?hl=zh-cn)
-
-#### TensorFlow官网讲解
-
-主要包括：
-
-(1) Keras机器学习基础知识
-
-* 均方误差（MSE）是用于回归问题的常见损失函数（分类问题中使用不同的损失函数）。
-
-* 早期停止是一种防止过度拟合的有效技术。
-
-
-
-(2) 加载和预处理数据
-
-(3) 图像
-
-* (卷积基础)[https://betterexplained.com/articles/intuitive-convolution/]
-
-* 
-(4) 文本
-
-(5) 生成式
-
-B站视频
-
-- [x] 对服装图像进行分类，了解TensorFlow处理全流程
-
-#### Keras实例
-
