@@ -29,6 +29,8 @@ def initialize_image():
 
 
 if __name__ == '__main__':
+    np.seterr(divide='ignore', invalid='ignore')
+
     model = models.Sequential()
     model.add(layers.Conv2D(32, (3, 3), activation='relu',
                             input_shape=(img_width, img_height, 3)))
@@ -76,10 +78,11 @@ if __name__ == '__main__':
     images_per_row = 16
 
     for layer_name, layer_activation in zip(layer_names, activations):
+        # 特征图中的特征个数
         n_features = layer_activation.shape[-1]
-
+        # 特征图的形状(1, size, size, n_features)
         size = layer_activation.shape[1]
-
+        # 在这个矩阵中将激活通道平铺
         n_cols = n_features // images_per_row
 
         display_grid = np.zeros((size * n_cols, images_per_row * size))
@@ -87,6 +90,7 @@ if __name__ == '__main__':
         for col in range(n_cols):
             for row in range(images_per_row):
                 channel_image = layer_activation[0, :, :, col * images_per_row + row]
+                # 对特征进行后处理，使其看起来更美观
                 channel_image -= channel_image.mean()
                 channel_image /= channel_image.std()
                 channel_image *= 64
