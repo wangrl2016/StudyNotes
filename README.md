@@ -71,15 +71,41 @@ Study notes in computer science
 
 - [x] 手写神经网络(0)：根据身高和体重预测性别项目介绍
 
+* 代码：[全连接神经网络](machine_learning/01_network/simple_neural_network.py)
+
 - [x] 神经网络的“引擎”：基于梯度的优化介绍
+
+* 训练过程：
+  1. 抽取训练样本x和对应目标y组成的数据批量。
+  2. 在x上运行网络[这一步叫作前向传播(forward pass)]，得到预测值y_pred。
+  3. 计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。
+  4. 更新网络的所有权重，使网络在这批数据上的损失略微下降。
+* 小批量随机梯度下降：
+  1. 抽取训练样本x和对应目标y组成的数据批量。
+  2. 在x上运行网络，得到预测值y_pred。
+  3. 计算网络在这批数据上的损失，用于衡量y_pred和y之间的距离。
+  4. 计算损失相对于网络参数的梯度[一次反向传播(backward pass)]。
+  5. 将参数沿着梯度的反方向移动一点，比如 W -= step * gradient，从而使这批数据上的损失减小一点。
 
 - [x] 神经网络的“齿轮”：张量运算（下）
 
+* 点积`(a, b, c, d) . (d, e) -> (a, b, c, e)`
+* 张量变形是指改变张量的行和列，以得到想要的形状。变形后的张量的元素总个数与初始张量相同。
+* 代码：[张量计算](machine_learning/01_network/tensor_operations.py)
+
 - [x] 神经网络的“齿轮”：张量运算（上）
 
-- [x] 使用NumPy库进行矩阵计算（点乘、转置）
+* 代码示例：`output = relu(dot(W, input) + b)`
+* 如果将两个形状不同的张量相加，较小的张量会被广播(broadcast)，广播的步骤：
+  1. 向较小的张量添加轴(叫作广播轴)，使其ndim与较大的张量相同。
+  2. 将较小的张量沿着新轴重复，使其形状与较大的张量相同。
+* 代码：[张量计算](machine_learning/01_network/tensor_operations.py)
 
+- [x] 使用NumPy库进行矩阵计算（点积、转置）
 
+* 代码：[矩阵计算](machine_learning/01_network/matrices.py)
+* 参考网址：[Matrix introduction](https://www.mathsisfun.com/algebra/matrix-introduction.html)
+* [Matrix multiplying](https://www.mathsisfun.com/algebra/matrix-multiplying.html)
 
 - [x] 导数基础概念介绍，以及Sigmoid函数求导
 
@@ -100,6 +126,7 @@ Study notes in computer science
 * 时间序列数据或序列数据：3D张量，形状为 (samples, timestamps, features)。
 * 图像：4D张量，形状为 (samples, height, width, channels) 或 (samples, channels, height, width)。
 * 视频：5D张量，形状为 (samples, frames, height, width, channels) 或 (samples, frames, channels, height, width)。
+* 代码：[张量表示](machine_learning/01_network/tensor_represent.py)
 
 - [x] 神经网络模型中的重要概念介绍
 
