@@ -17,6 +17,8 @@ Study notes in computer science
 
 - [ ] 循环神经网络
 
+- [ ] 使用one-hot编码将文本转化为张量
+
 - [ ] 图像分割
 
 - [ ] 数据增强
@@ -28,7 +30,7 @@ Study notes in computer science
 * 代码：[可视化过滤器](machine_learning/02_tensorflow/visual_conv_filter.py)
 * 参考网址：[Visualizing what convnets learn](https://keras.io/examples/vision/visualizing_what_convnets_learn/)
 
-- [ ] 卷积神经网络(5)：可视化中间激活
+- [x] 卷积神经网络(5)：可视化中间激活
 
 * 可视化中间激活，是指对于给定输入，展示网络中各个卷积层和池化层输出的特征图（层的输出通常被称为该层的激活，即激活函数的输出）。
 * 深度神经网络的普遍特征：随着层数的加深，层所提取的特征变得越来越抽象。更高的层激活关于特定输入的信息越来越少，而关于目标的信息越来越多。
@@ -65,13 +67,27 @@ Study notes in computer science
 
 - [x] 手写神经网络(3)：微分知识（链式法则和偏导数）
 
+* 链式法则用于求合成函数的导数。
+* 在数学中，偏导数（英语：partial derivative）的定义是：一个多变量的函数（或称多元函数），对其中一个变量（导数）微分，而保持其他变量恒定。
+* 参考网址：[链式法则](https://zh.wikipedia.org/wiki/链式法则)
+* [偏导数](https://zh.wikipedia.org/zh-hans/偏导数)
+
 - [x] 手写神经网络(2)：将神经元组合成神经网络
 
+* 通过神经元构建三层的神经网络。 
+* 将身高和体重两个输入数据传递到神经网络中。 
+* 通过隐藏层的计算输入到输出层中。 
+* 最后得到男女性别的概率。
+
 - [x] 手写神经网络(1)：构建神经元(Neuron)
+
+* 一个神经元的功能是求得输入向量与权向量的内积后，经一个非线性传递函数得到一个标量结果。
+* 代码：[Neurons](machine_learning/01_network/neurons.py)
 
 - [x] 手写神经网络(0)：根据身高和体重预测性别项目介绍
 
 * 代码：[全连接神经网络](machine_learning/01_network/simple_neural_network.py)
+* 参考网址：[Machine Learning for Beginners: An Introduction to Neural Networks](https://victorzhou.com/blog/intro-to-neural-networks/)
 
 - [x] 神经网络的“引擎”：基于梯度的优化介绍
 
