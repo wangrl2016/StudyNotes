@@ -93,7 +93,18 @@ Study notes in computer science
 
 - [x] 神经网络的数据表示：张量(Tensor)
 
+* 向量数据：2D张量，形状为 (samples, features)。
+* 时间序列数据或序列数据：3D张量，形状为 (samples, timestamps, features)。
+* 图像：4D张量，形状为 (samples, height, width, channels) 或 (samples, channels, height, width)。
+* 视频：5D张量，形状为 (samples, frames, height, width, channels) 或 (samples, frames, channels, height, width)。
+
 - [x] 神经网络模型中的重要概念介绍
+
+* 深度神经网络通过一系列简单的数据变换(layer)来实现这种输入到目标的映射，而这些数据变换都是通过观察示例学习到的。
+* 神经网络中每层对输入数据所做的具体操作保存在该层的权重(weight)中，其本质是一串数字。
+* 学习的意思是为神经网络的所有层找到一组权重值，使得该网络能够将每个示例输入与其目标正确地一一对应。
+* 损失函数(loss)的输入是网络预测值与真实目标值(即你希望网络输出的结果)，然后计算一个距离值，衡量该网络在这个示例上的效果好坏。
+* 深度学习的基本技巧是利用这个距离值作为反馈信号来对权重值进行微调，以降低当前示例对应的损失值。这种调节由优化器(optimizer)来完成，它实现了所谓的反向传播(backpropagation)算法，这是深度学习的核心算法。
 
 - [x] 神经网络模型中的HelloWorld程序介绍
 
