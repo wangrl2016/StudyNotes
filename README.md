@@ -26,7 +26,7 @@ Study notes in computer science
 * 想要观察卷积神经网络学到的过滤器，一种简单的方法是显示每个过滤器所响应的视觉模式。
 * 这可以通过在输入空间中进行梯度上升来实现：从空白输入图像开始，将梯度下降应用于卷积神经网络输入图像的值，其目的是让某个过滤器的响应最大化。得到的输入图像是选定的过滤器具有最大响应的图像。
 * 代码：[可视化过滤器](machine_learning/02_tensorflow/visual_conv_filter.py)
-
+* 参考网址：[Visualizing what convnets learn](https://keras.io/examples/vision/visualizing_what_convnets_learn/)
 
 - [ ] 卷积神经网络(5)：可视化中间激活
 
@@ -79,6 +79,8 @@ Study notes in computer science
 
 - [x] 使用NumPy库进行矩阵计算（点乘、转置）
 
+
+
 - [x] 导数基础概念介绍，以及Sigmoid函数求导
 
 * 参考网址：[Introduction to Derivatives](https://www.mathsisfun.com/calculus/derivatives-introduction.html)
@@ -89,7 +91,8 @@ Study notes in computer science
 
 - [x] 科学计算基础包NumPy入门介绍
 
-* 参考网址：[Numpy官方教程]()
+* 代码示例`np.linspace(0, 10, num=5)`
+* 参考网址：[NumPy: the absolute basics for beginners](https://numpy.org/doc/stable/user/absolute_beginners.html)
 
 - [x] 神经网络的数据表示：张量(Tensor)
 
