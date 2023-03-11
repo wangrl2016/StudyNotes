@@ -29,6 +29,12 @@ Study notes in computer science
 
 - [ ] 数据增强
 
+* 数据增强：一种通过应用随机（但真实）的变换（例如图像旋转）来增加训练集多样性的技术。
+* 通过两种方式应用数据增强：
+  1. 使用 Keras 预处理层`tf.keras.layers.Resizing`
+  2. 使用 tf.image 方法`tf.image.flip_left_right`
+* 代码：[Data augmentation](machine_learning/02_tensorflow/data_augment.py)
+
 - [ ] 可视化卷积神经网络的过滤器
 
 * 想要观察卷积神经网络学到的过滤器，一种简单的方法是显示每个过滤器所响应的视觉模式。
