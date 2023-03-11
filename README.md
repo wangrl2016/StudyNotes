@@ -15,9 +15,15 @@ Study notes in computer science
 
 - [ ] 声音识别
 
+- [ ] LSTM(long short-term memory)
+
+
 - [ ] 循环神经网络
 
 - [ ] 使用one-hot编码将文本转化为张量
+
+* 将每个单词与一个唯一的整数索引相关联，然后将这个整数索引i转换为长度为N的二进制向量(N是词表大小)，这个向量只有第i个元素是1，其余元素都为0。
+* [One-hot编码](machine_learning/02_tensorflow/one_shot.py)
 
 - [ ] 图像分割
 
@@ -61,9 +67,19 @@ Study notes in computer science
 
 - [x] 手写神经网络(6)：完整代码和总结
 
+* 代码：[QuickStart](machine_learning/01_network/quick_start.py)
+
 - [x] 手写神经网络(5)：训练神经网络（下）
 
+* 训练过程如下：
+  1. 从数据集中选择一个样本，传递到神经网络中进行向前传播。
+  2. 计算损失值相对于网络中每个参数的偏导数
+  3. 使用偏导数的结果去更新网络中的参数
+  4. 回到步骤(1)重复这样的过程
+
 - [x] 手写神经网络(4)：训练神经网络（上）
+
+* 均方误差(MSE)是“误差”的平方的期望值。误差就是估计值与被估计量的差。
 
 - [x] 手写神经网络(3)：微分知识（链式法则和偏导数）
 

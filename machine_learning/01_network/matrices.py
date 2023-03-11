@@ -1,8 +1,3 @@
-"""
-https://www.mathsisfun.com/algebra/matrix-introduction.html
-https://www.mathsisfun.com/algebra/matrix-multiplying.html
-"""
-
 import numpy as np
 
 if __name__ == '__main__':
