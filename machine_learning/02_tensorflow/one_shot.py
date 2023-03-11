@@ -1,6 +1,5 @@
-import string
-
 import numpy as np
+from keras.preprocessing.text import Tokenizer
 
 if __name__ == '__main__':
     samples = ['The cat sat on the mat.', 'The dog ate my homework.']
@@ -26,4 +25,14 @@ if __name__ == '__main__':
 
     print(result)
 
-    # one-hot散列技巧
+    # 使用Keras实现单词级的one-hot编码
+    tokenizer = Tokenizer(num_words=1000)
+    # 构建单词索引
+    tokenizer.fit_on_texts(samples)
+
+    # 将字符串转换为整数索引组成的列表
+    sequences = tokenizer.texts_to_sequences(samples)
+    one_hot_results = tokenizer.texts_to_matrix(samples, mode='binary')
+
+    print(result)
+
