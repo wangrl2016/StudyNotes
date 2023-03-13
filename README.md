@@ -17,7 +17,6 @@ Study notes in computer science
 
 - [ ] LSTM(long short-term memory)
 
-
 - [ ] 循环神经网络
 
 - [ ] 使用one-hot编码将文本转化为张量
@@ -27,7 +26,7 @@ Study notes in computer science
 
 - [ ] 图像分割
 
-- [ ] 数据增强
+- [x] 数据增强
 
 * 数据增强：一种通过应用随机（但真实）的变换（例如图像旋转）来增加训练集多样性的技术。
 * 通过两种方式应用数据增强：
@@ -35,7 +34,7 @@ Study notes in computer science
   2. 使用 tf.image 方法`tf.image.flip_left_right`
 * 代码：[Data augmentation](machine_learning/02_tensorflow/data_augment.py)
 
-- [ ] 可视化卷积神经网络的过滤器
+- [x] 可视化卷积神经网络的过滤器
 
 * 想要观察卷积神经网络学到的过滤器，一种简单的方法是显示每个过滤器所响应的视觉模式。
 * 这可以通过在输入空间中进行梯度上升来实现：从空白输入图像开始，将梯度下降应用于卷积神经网络输入图像的值，其目的是让某个过滤器的响应最大化。得到的输入图像是选定的过滤器具有最大响应的图像。
@@ -72,6 +71,8 @@ Study notes in computer science
 - [ ] 对服装图像进行分类，了解TensorFlow处理全流程
 
 - [x] 手写神经网络(6)：完整代码和总结
+
+* 手写神经网络是最简单的全连接神经网络。
 
 * 代码：[QuickStart](machine_learning/01_network/quick_start.py)
 
