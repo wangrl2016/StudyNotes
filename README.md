@@ -26,6 +26,9 @@ Study notes in computer science
 
 - [ ] 图像分割
 
+* 代码：[图像分割](machine_learning/02_tensorflow/image_segment.py)
+* 参考网址：[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+
 - [x] 数据增强
 
 * 数据增强：一种通过应用随机（但真实）的变换（例如图像旋转）来增加训练集多样性的技术。
