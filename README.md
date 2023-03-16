@@ -59,24 +59,42 @@ Study notes in computer science
 * 最大池化代码`layers.MaxPooling2D((2, 2))`
 * 参考网址：[Max pooling示意图](https://paperswithcode.com/method/max-pooling)
 
-- [x] 卷积神经网络(3)：卷积计算（下）
+- [ ] 卷积神经网络(3)：卷积计算（下）
 
 * 参考网址：[A Comprehensive Guide to Convolutional Neural Networks](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
 
-- [x] 卷积神经网络(2)：卷积计算（上）
+- [ ] 卷积神经网络(2)：卷积计算（上）
 
-- [x] 卷积神经网络(1)：使用CIFAR数据集进行识别
+- [ ] 卷积神经网络(1)：使用CIFAR数据集进行识别
 
-- [ ] 防止过拟合的四种策略：重点介绍添加权重正则化
 
-- [ ] 回归问题(Regression)：通过数据描述输出连续值
+- [x] 防止过拟合的四种策略：重点介绍添加权重正则化
 
-- [ ] 对服装图像进行分类，了解TensorFlow处理全流程
+* 防止过拟合的四种方法：
+  1. 获得更多训练数据
+  2. 降低网络容量
+  3. 添加权重正则化
+  4. 添加随机失活
+
+- [x] 回归问题(Regression)：通过数据描述输出连续值
+
+* 均方误差（MSE）是用于回归问题的常见损失函数（分类问题中使用不同的损失函数）。
+* 当数字输入数据特征的值存在不同范围时，每个特征应独立缩放到相同范围。
+* 如果训练数据不多，一种方法是选择隐藏层较少的小网络，以避免过度拟合。
+* 代码：[Regression](machine_learning/02_tensorflow/regression.py)
+
+- [x] 对服装图像进行分类，了解TensorFlow处理全流程
+
+* 流程步骤：
+  1. 预处理数据
+  2. 构建模型
+  3. 训练模型
+  4. 使用训练好的模型
+* 代码：[Image classify](machine_learning/02_tensorflow/image_classify.py)
 
 - [x] 手写神经网络(6)：完整代码和总结
 
-* 手写神经网络是最简单的全连接神经网络。
-
+* 手写神经网络是最简单的全连接神经网络(DNN)。
 * 代码：[QuickStart](machine_learning/01_network/quick_start.py)
 
 - [x] 手写神经网络(5)：训练神经网络（下）
