@@ -8,6 +8,26 @@ import matplotlib.pyplot as plt
 # This guide trains a neural network model to classify images of
 # clothing, like sneakers and shirts.
 
+
+def plot_image(i, predictions_array, true_label, img):
+    true_label, img = true_label[i], img[i]
+    plt.grid(False)
+    plt.xticks([])
+    plt.yticks([])
+    plt.imshow(img, cmap=plt.cm.binary)
+
+    predicted_label = np.argmax(predictions_array)
+    if predicted_label == true_label:
+        color = 'blue'
+    else:
+        color = 'red'
+
+    plt.xlabel('{} {:2.0f}% ({})'.format(class_names[predicted_label],
+                                         100*np.max(predictions_array),
+                                         class_names[true_label]),
+               color=color)
+
+
 if __name__ == '__main__':
     print(tf.__version__)
 
@@ -82,4 +102,8 @@ if __name__ == '__main__':
     print(np.argmax(predictions[0]))
     print(test_labels[0])
 
-
+    index = 0
+    plt.figure(figsize=(6, 3))
+    plt.subplot(1, 2, 1)
+    plot_image(index, predictions[index], test_labels, test_images)
+    plt.show()
