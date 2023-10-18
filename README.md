@@ -1,6 +1,25 @@
 # StudyNotes
 
-Study notes in computer science
+Machine Learning from Scratch
+
+### Tutorials from TensorFlow
+
+#### Prerequisite
+
+1. [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+
+2. [Deep Learn with Python](resources/deep_learning_with_python.pdf)
+
+#### ML basics with Keras
+
+1. [Basic image classification](tensorflow/01_ml_basics_with_keras/01_basic_image_classification/classify_images_of_clothing.py)
+
+2. [Basic text classification](tensorflow/01_ml_basics_with_keras/02_basic_text_classification/sentiment_analysis_of_movie_review.py)
+
+#### Customization
+
+1. [Tensors and operations]()
+
 
 ### 机器学习合集
 
