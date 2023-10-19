@@ -18,7 +18,10 @@ Machine Learning from Scratch
 
 6. [Matplotlib: Visualization with Python](https://matplotlib.org) (Web)
 
-7. [THE MNIST DATABASE of handwritten digits](mnist_database.py)
+7. [THE MNIST DATABASE of handwritten digits](tensorflow/00_prerequisite/mnist_database.py)
+
+8. [WAVE PCM soundfile format](tensorflow/00_prerequisite/parse_wav_file.py)
+
 
 #### ML basics with Keras
 

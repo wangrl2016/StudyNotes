@@ -29,8 +29,8 @@ def plot_image(i, predictions_array, true_label, img):
                color=color)
 
 
-def plot_value_array(i, predictions_array, true_label):
-    true_label = true_label[i]
+def plot_value_array(j, predictions_array, true_label):
+    true_label = true_label[j]
     plt.grid(False)
     plt.xticks(range(10))
     plt.yticks()
