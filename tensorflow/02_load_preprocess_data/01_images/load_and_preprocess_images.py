@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import PIL.Image
 import numpy as np
 import tensorflow as tf
+import tensorflow_datasets as tfds
 
 # This tutorial uses a dataset of several thousand photos of flowers.
 dataset_url = 'https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz'
@@ -157,4 +158,31 @@ if __name__ == '__main__':
         print('Image shape: ', img.numpy().shape)
         print('Label: ', lab.numpy())
 
+    train_ds = configure_for_performance(train_ds)
+    val_ds = configure_for_performance(val_ds)
+
+    # visualize the data
+    image_batch, label_batch = next(iter(train_ds))
+    plt.figure(figsize=(10, 10))
+    for i in range(9):
+        ax = plt.subplot(3, 3, i+1)
+        plt.imshow(image_batch[i].numpy().astype('uint8'))
+        label = label_batch[i]
+        plt.title(class_names[label])
+        plt.axis('off')
+
+    model.fit(train_ds, validation_data=val_ds, epochs=3)
+
+    # using TensorFlow datasets
+    (train_ds, val_ds, test_ds), metadata = tfds.load(
+        'tf_flowers',
+        split=['train[:80%]', 'train[80%:90%]', 'train[90%:]'],
+        with_info=True,
+        as_supervised=True,)
+
+    num_classes = metadata.features['label'].num_classes
+    print(num_classes)
+
     
+
+
