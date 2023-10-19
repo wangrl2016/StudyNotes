@@ -1,5 +1,6 @@
-import tensorflow as tf
 import numpy as np
+import tempfile
+import tensorflow as tf
 import time
 
 
@@ -66,3 +67,25 @@ if __name__ == '__main__':
             assert x.device.endswith('GPU:0')
             time_matmul(x)
 
+    ds_tensors = tf.data.Dataset.from_tensor_slices([1, 2, 3, 4, 5, 6])
+
+    # create a CSV file
+    _, filename = tempfile.mkstemp()
+
+    with open(filename, 'w') as f:
+        f.write("""Line 1\nLine 2\nLine3\n """)
+
+    ds_file = tf.data.TextLineDataset(filename)
+
+    # apply transformations
+    ds_tensors = ds_tensors.map(tf.math.square).shuffle(2).batch(2)
+    ds_file = ds_file.batch(2)
+
+    # iterate
+    print('Elements of ds_tensors:')
+    for x in ds_tensors:
+        print(x)
+
+    print('\nElements in ds_file:')
+    for x in ds_file:
+        print(x)

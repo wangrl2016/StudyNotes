@@ -6,9 +6,19 @@ Machine Learning from Scratch
 
 #### Prerequisite
 
-1. [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+1. [The Python Tutorial](https://docs.python.org/3/tutorial/index.html) (Web)
 
-2. [Deep Learn with Python](resources/deep_learning_with_python.pdf)
+2. [Deep Learn with Python](resources/deep_learning_with_python.pdf) (PDF)
+
+3. [Linear Algebra for Everyone](https://math.mit.edu/~gs/everyone/) (Book)
+
+4. [The Calculus Lifesaver: All the Tools You Need to Excel at Calculus](https://press.princeton.edu/series/princeton-lifesaver-study-guides) (Book)
+
+5. [NumPy: The fundamental package for scientific computing with Python](https://numpy.org) (Web)
+
+6. [Matplotlib: Visualization with Python](https://matplotlib.org) (Web)
+
+7. [THE MNIST DATABASE of handwritten digits](mnist_database.py)
 
 #### ML basics with Keras
 
