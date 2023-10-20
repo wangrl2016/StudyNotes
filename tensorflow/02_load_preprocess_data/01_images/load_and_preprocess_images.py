@@ -183,6 +183,11 @@ if __name__ == '__main__':
     num_classes = metadata.features['label'].num_classes
     print(num_classes)
 
-    
+    get_label_name = metadata.features['label'].int2str
+    image, label = next(iter(train_ds))
+    _ = plt.imshow(image)
+    _ = plt.title(get_label_name(label))
 
-
+    train_ds = configure_for_performance(train_ds)
+    val_ds = configure_for_performance(val_ds)
+    test_ds = configure_for_performance(test_ds)
